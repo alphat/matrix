@@ -1,0 +1,63 @@
+﻿@charset "UTF-8";
+
+@import "matrix.scss";
+
+// 变量
+$layout-footer-height:  70px;   // 页脚高度
+$win-min-width:         980px;  // 窗口显示最小宽度
+$content-margin:        15px;   // 内容留空
+
+@include base-layout($win-min-width, $layout-footer-height, $content-margin);
+/*
+//============================================================
+@include base-layout 生成以下代码, 如果style.css不使用scss,引用该段代替
+//============================================================
+.min-width-out { _position: relative; _margin-left: 980px; _zoom: 1; }
+.min-width-in { _position: relative; _float: left; _margin-left: -980px; }
+.min-width { min-width: 980px; _zoom: 1; }
+html, body { height: 100%; }
+.wrapper { clear: both; min-height: 100%; height: auto !important; height: 100%; margin-bottom: -70px; }
+.wrapper .push { height: 70px; }
+.footer { clear: both; position: relative; height: 70px; }
+.mx-layout-center .header .content, .mx-layout-center .footer .content, .mx-layout-center .main .content { width: 950px !important; margin-left: auto !important; margin-right: auto !important; }
+*/
+
+// 全局 
+a{ color:#2a69ac; }
+a:hover{ color:#3177c1; }
+
+// 头部：左侧Logo + 右侧用户信息 + 功能菜单
+.header{ border-top:2px solid #cf0f0f; @include gradient-background(#ffffff, #f3f5f7); position: relative; border-bottom: 1px solid #fff;}
+.header-no-top{ border-top-color: #fff;border-bottom: 1px solid #e2e2e2; }
+.header .content, .footer .content{ position:relative; padding:$content-margin;@include clearfix(); }
+
+.header .logo-img{ height: 25px; float:left; display: inline-block; }
+.header .logo-text{ float:left; border-left: 1px solid #ccc;margin-top:4px; margin-left: 10px; padding-left: 10px; color:#333; }
+
+.header-infos{ position: absolute; right: $content-margin; margin-top:4px; }
+.header-infos dd{ float:left; padding:0 10px; border-right: 1px solid #ccc; }
+.header-infos span{ margin-right: $content-margin; }
+.header-infos .last{ margin:0; border:none; padding-right: 0; }
+
+.main .content{ padding:$content-margin;}
+
+//页脚
+.footer{ background-color: #e5e5e5; font-size: 12px; line-height: 20px; color: #999; }
+
+.footer a{ color: #999; margin-right: 5px; }
+.footer a:hover{ color: #bcbcbc; }
+
+.footer-auth{ width:495px; height:40px; background:url('../image/footer-auth.png') no-repeat; position: absolute;right:$content-margin;top:10px; }
+.footer-auth a{ height:40px; display:inline-block; float:left;margin-right: 0; }
+.footer-auth a.link-1{ width:100px; }
+.footer-auth a.link-2{ width:95px;  }
+.footer-auth a.link-3{ width:103px; }
+.footer-auth a.link-4{ width:100px; }
+.footer-auth a.link-5{ width:95px;  }
+
+.footer-auth a:hover{ background:url('../image/footer-auth.png') no-repeat; }
+.footer-auth a.link-1:hover{ background-position: 0 -40px;      }
+.footer-auth a.link-2:hover{ background-position: -100px -40px; }
+.footer-auth a.link-3:hover{ background-position: -195px -40px; }
+.footer-auth a.link-4:hover{ background-position: -298px -40px; }
+.footer-auth a.link-5:hover{ background-position: -398px -40px; }

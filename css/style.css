@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*
+* Matrix v2.1.0 (c) 2014 ChinaPnR.com
+* MIT License: http://ued.chinapnr.com/matrix/license.txt
+*/
+html { color: #666; background: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; overflow-y: scroll; }
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+body, button, input, select, textarea { font: 500 13px Verdana, Geneva, sans-serif, SimSun; line-height: 16px; }
+
+button, input { *width: auto; *overflow: visible; line-height: 16px; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+th { text-align: inherit; }
+
+fieldset, img { border: 0; }
+
+img { -ms-interpolation-mode: bicubic; }
+
+iframe { display: block; }
+
+ul, ol { list-style: none; }
+
+caption, th { text-align: left; }
+
+q:before, q:after { content: ''; }
+
+a:hover { text-decoration: none; }
+
+ins, a { text-decoration: none; }
+
+a, input, select, label { outline: none; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+button[disabled], html input[disabled] { cursor: default; }
+
+.clearfix { *zoom: 1; overflow: hidden; }
+.clearfix:before, .clearfix:after { display: table; content: ""; line-height: 0; }
+.clearfix:after { clear: both; }
+
+.mt0 { margin-top: 0px !important; }
+
+.mt5 { margin-top: 5px !important; }
+
+.mt10 { margin-top: 10px !important; }
+
+.mt20 { margin-top: 20px !important; }
+
+.mt30 { margin-top: 30px !important; }
+
+.mb0 { margin-bottom: 0px !important; }
+
+.mb5 { margin-bottom: 5px !important; }
+
+.mb10 { margin-bottom: 10px !important; }
+
+.mb20 { margin-bottom: 20px !important; }
+
+.mb30 { margin-bottom: 30px !important; }
+
+.align-left { text-align: left !important; }
+
+.align-center { text-align: center !important; }
+
+.align-right { text-align: right !important; }
+
+.cursor-help { cursor: help !important; }
+
+.block { display: block !important; }
+
+.inline-block { display: inline-block !important; }
+
+.min-width-out { _position: relative; _margin-left: 980px; _zoom: 1; }
+
+.min-width-in { _position: relative; _float: left; _margin-left: -980px; }
+
+.min-width { min-width: 980px; _zoom: 1; }
+
+html, body { height: 100%; }
+
+.wrapper { clear: both; min-height: 100%; height: auto !important; height: 100%; margin-bottom: -70px; }
+.wrapper .push { height: 70px; }
+
+.footer { clear: both; position: relative; height: 70px; }
+
+.mx-layout-center .header .content, .mx-layout-center .footer .content, .mx-layout-center .main .content { width: 950px !important; margin-left: auto !important; margin-right: auto !important; }
+
+/*
+//============================================================
+@include base-layout 生成以下代码, 如果style.css不使用scss,引用该段代替
+//============================================================
+.min-width-out { _position: relative; _margin-left: 980px; _zoom: 1; }
+.min-width-in { _position: relative; _float: left; _margin-left: -980px; }
+.min-width { min-width: 980px; _zoom: 1; }
+html, body { height: 100%; }
+.wrapper { clear: both; min-height: 100%; height: auto !important; height: 100%; margin-bottom: -70px; }
+.wrapper .push { height: 70px; }
+.footer { clear: both; position: relative; height: 70px; }
+.mx-layout-center .header .content, .mx-layout-center .footer .content, .mx-layout-center .main .content { width: 950px !important; margin-left: auto !important; margin-right: auto !important; }
+*/
+a { color: #2a69ac; }
+
+a:hover { color: #3177c1; }
+
+.header { border-top: 2px solid #cf0f0f; background-image: -moz-linear-gradient(#ffffff, #f3f5f7); background-image: -webkit-linear-gradient(#ffffff, #f3f5f7); background-image: linear-gradient(#ffffff, #f3f5f7); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF3F5F7'); position: relative; border-bottom: 1px solid #fff; }
+
+.header-no-top { border-top-color: #fff; border-bottom: 1px solid #e2e2e2; }
+
+.header .content, .footer .content { position: relative; padding: 15px; *zoom: 1; overflow: hidden; }
+.header .content:before, .header .content:after, .footer .content:before, .footer .content:after { display: table; content: ""; line-height: 0; }
+.header .content:after, .footer .content:after { clear: both; }
+
+.header .logo-img { height: 25px; float: left; display: inline-block; }
+
+.header .logo-text { float: left; border-left: 1px solid #ccc; margin-top: 4px; margin-left: 10px; padding-left: 10px; color: #333; }
+
+.header-infos { position: absolute; right: 15px; margin-top: 4px; }
+
+.header-infos dd { float: left; padding: 0 10px; border-right: 1px solid #ccc; }
+
+.header-infos span { margin-right: 15px; }
+
+.header-infos .last { margin: 0; border: none; padding-right: 0; }
+
+.main .content { padding: 15px; }
+
+.footer { background-color: #e5e5e5; font-size: 12px; line-height: 20px; color: #999; }
+
+.footer a { color: #999; margin-right: 5px; }
+
+.footer a:hover { color: #bcbcbc; }
+
+.footer-auth { width: 495px; height: 40px; background: url("../image/footer-auth.png") no-repeat; position: absolute; right: 15px; top: 10px; }
+
+.footer-auth a { height: 40px; display: inline-block; float: left; margin-right: 0; }
+
+.footer-auth a.link-1 { width: 100px; }
+
+.footer-auth a.link-2 { width: 95px; }
+
+.footer-auth a.link-3 { width: 103px; }
+
+.footer-auth a.link-4 { width: 100px; }
+
+.footer-auth a.link-5 { width: 95px; }
+
+.footer-auth a:hover { background: url("../image/footer-auth.png") no-repeat; }
+
+.footer-auth a.link-1:hover { background-position: 0 -40px; }
+
+.footer-auth a.link-2:hover { background-position: -100px -40px; }
+
+.footer-auth a.link-3:hover { background-position: -195px -40px; }
+
+.footer-auth a.link-4:hover { background-position: -298px -40px; }
+
+.footer-auth a.link-5:hover { background-position: -398px -40px; }
