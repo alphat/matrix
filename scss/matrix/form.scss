@@ -47,7 +47,7 @@ select.form-unit{
   _margin: 1px 0;
 }
 .form-list select.form-unit{
-  width: 454px;
+  width: $formInputWidthLong+22px;
 }
 // 单选框，复选框
 .checkbox,.radio{
