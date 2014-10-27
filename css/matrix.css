@@ -176,3 +176,22 @@ a.btn-disabled span { color: #b6b6b6; border: 1px solid #dedede; }
 .form-content .form-list .form-unit-smscode { width: 134px; }
 
 .form-content .form-list .tips-content-card { position: absolute; top: -41px; left: -285px; border: 1px solid #e5e5ab; font-size: 22px; background-color: #ffffcc; padding: 10px; *width: 250px; min-width: 250px; height: 18px; }
+
+.table { overflow-x: auto; border: 1px solid #d6d6d6; }
+
+.table table { width: 100%; background: white; border-collapse: separate; *border-collapse: collapse; }
+
+.table th { padding: 8px 0 8px 15px; background: #E9EFF6; font-weight: normal; white-space: nowrap; vertical-align: middle; }
+
+.table td { padding: 15px; white-space: nowrap; vertical-align: middle; }
+
+.table tbody td { border-bottom: 1px solid #eeeeee; }
+
+.table tfoot { line-height: 20px; }
+.table tfoot strong { color: #2A69AC; }
+
+.table .page { color: #999; }
+.table .page a { margin: 0 5px; }
+.table .page .current { color: #333; font-weight: bold; }
+
+.table-border td { border-right: 1px solid #eeeeee; }

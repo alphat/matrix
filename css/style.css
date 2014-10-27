@@ -178,6 +178,25 @@ a.btn-disabled span { color: #b6b6b6; border: 1px solid #dedede; }
 
 .form-content .form-list .tips-content-card { position: absolute; top: -41px; left: -285px; border: 1px solid #e5e5ab; font-size: 22px; background-color: #ffffcc; padding: 10px; *width: 250px; min-width: 250px; height: 18px; }
 
+.table { overflow-x: auto; border: 1px solid #d6d6d6; }
+
+.table table { width: 100%; background: white; border-collapse: separate; *border-collapse: collapse; }
+
+.table th { padding: 8px 0 8px 15px; background: #E9EFF6; font-weight: normal; white-space: nowrap; vertical-align: middle; }
+
+.table td { padding: 15px; white-space: nowrap; vertical-align: middle; }
+
+.table tbody td { border-bottom: 1px solid #eeeeee; }
+
+.table tfoot { line-height: 20px; }
+.table tfoot strong { color: #2A69AC; }
+
+.table .page { color: #999; }
+.table .page a { margin: 0 5px; }
+.table .page .current { color: #333; font-weight: bold; }
+
+.table-border td { border-right: 1px solid #eeeeee; }
+
 .min-width-out { _position: relative; _margin-left: 980px; _zoom: 1; }
 
 .min-width-in { _position: relative; _float: left; _margin-left: -980px; }
@@ -210,6 +229,8 @@ a { color: #2a69ac; }
 
 a:hover { color: #3177c1; }
 
+.has-sidebar { background: #f3f5f7 url(../img/body-bg.png) repeat-y; }
+
 .header { border-top: 2px solid #cf0f0f; background-image: -moz-linear-gradient(#ffffff, #f3f5f7); background-image: -webkit-linear-gradient(#ffffff, #f3f5f7); background-image: linear-gradient(#ffffff, #f3f5f7); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF3F5F7'); position: relative; border-bottom: 1px solid #fff; }
 
 .header-no-top { border-top-color: #fff; border-bottom: 1px solid #e2e2e2; }
@@ -230,7 +251,66 @@ a:hover { color: #3177c1; }
 
 .header-infos .last { margin: 0; border: none; padding-right: 0; }
 
-.main .content { padding: 15px; }
+.main-menu { position: relative; }
+
+.main-menu { border-top: 1px solid #2364a9; height: 64px; background-image: -moz-linear-gradient(#1b5ea6, #12559b); background-image: -webkit-linear-gradient(#1b5ea6, #12559b); background-image: linear-gradient(#1b5ea6, #12559b); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1B5EA6', endColorstr='#FF12559B'); overflow: hidden; }
+
+.main-menu-title { float: left; width: 540px; height: 64px; background: url(../img/main-menu-bg.png) no-repeat; font-family: Microsoft Yahei; color: #fff; font-weight: bold; font-size: 18px; padding-left: 15px; line-height: 63px; }
+
+.nav-tab { position: absolute; top: 0; right: 15px; }
+
+.nav-tab .nav-tab-item { float: left; margin: 34px 0 0 4px; border: 1px solid #144880; border-bottom: 0; color: #B7D3EE; text-align: center; line-height: 29px; box-shadow: 0px 0px 2px #165392; background-image: -moz-linear-gradient(#3276bc, #1b60a8); background-image: -webkit-linear-gradient(#3276bc, #1b60a8); background-image: linear-gradient(#3276bc, #1b60a8); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3276BC', endColorstr='#FF1B60A8'); }
+
+.nav-tab .nav-tab-item a { color: #B7D3EE; display: block; width: 103px; height: 29px; }
+
+.nav-tab .nav-tab-item a:hover { color: #eee; }
+
+.nav-tab .current { width: 113px; color: #2A69AC; background-image: -moz-linear-gradient(#f3f5f7, #ffffff); background-image: -webkit-linear-gradient(#f3f5f7, #ffffff); background-image: linear-gradient(#f3f5f7, #ffffff); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF3F5F7', endColorstr='#FFFFFFFF'); }
+
+.nav-tab .current a { color: #2A69AC; }
+
+.nav-tab .current a:hover { color: #333; }
+
+.sidebar-menu { width: 239px; float: left; }
+
+.sidebar-menu .sidebar-top { background-image: -moz-linear-gradient(#d3d9e2, #e8eef5); background-image: -webkit-linear-gradient(#d3d9e2, #e8eef5); background-image: linear-gradient(#d3d9e2, #e8eef5); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD3D9E2', endColorstr='#FFE8EEF5'); height: 15px; overflow: hidden; }
+
+.left-nav-item { _zoom: 1; }
+
+.left-nav-item dt { border-bottom: 1px solid #DAE5ED; cursor: pointer; _zoom: 1; }
+
+.left-nav-item dt a { color: #666; display: block; height: 16px; padding: 10px 0 10px 35px; background: #e9eff6; }
+
+.left-nav-item dt a:hover { color: #333; background: #f1f6fa; border: none; height: 16px; }
+
+.left-nav-item dd { display: none; height: 34px; border-bottom: 1px solid #cfdce6; }
+
+.left-nav-item dd a { display: block; height: 34px; padding-left: 75px; line-height: 33px; _border-bottom: 1px solid #DFE9F5; }
+
+.left-nav-item a:hover, .left-nav-item a.hover { height: 33px; background-color: #568BC3; border-width: 1px 0; border-color: #437AB2; border-style: solid; color: #fff; }
+
+.left-nav-item .current dd { background-color: #DFE9F5; }
+
+.nav-ico { display: inline-block; width: 11px; height: 11px; margin-right: 15px; background: url(../img/menu-open.png) no-repeat; overflow: hidden; }
+
+.current .nav-ico { background: url(../img/menu-close.png) no-repeat; }
+
+/*** 最好使用 fixed, fix later ***/
+.arrow-btn { /* position:fixed;_ */ position: absolute; top: 175px; left: 240px; padding: 14px 4px 14px 3px; line-height: 0; background-color: #9BA2AB; text-align: center; cursor: pointer; font-family: arial; }
+
+.arrow-btn-left, .arrow-btn-right { display: inline-block; width: 5px; height: 7px; background: url(../img/icon-arrow-left.png) no-repeat; overflow: hidden; }
+
+.arrow-btn-right { background: url(../img/icon-arrow-right.png) no-repeat; }
+
+.main .content { margin: 0 0 0 255px; padding: 50px 15px 15px; _float: left; _margin-left: 0; }
+
+.main-content-title { border-top: 1px dashed #d6d6d6; }
+
+.main-content-title span { position: absolute; margin-top: -10px; padding-right: 15px; background-color: #F3F5F7; color: #333; font-size: 14px; font-weight: normal; }
+
+.main-content-top { padding-top: 30px; border-bottom: 1px dashed #d6d6d6; padding-bottom: 18px; margin-bottom: 20px; }
+
+.main-content-bottom { /* margin-left: 380px; */ }
 
 .footer { background-color: #e5e5e5; font-size: 12px; line-height: 20px; color: #999; }
 

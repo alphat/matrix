@@ -26,6 +26,9 @@ html, body { height: 100%; }
 a{ color:#2a69ac; }
 a:hover{ color:#3177c1; }
 
+//布局
+.has-sidebar{background: #f3f5f7 url(../img/body-bg.png) repeat-y;}
+
 // 头部：左侧Logo + 右侧用户信息 + 功能菜单
 .header{ border-top:2px solid #cf0f0f; @include gradient-background(#ffffff, #f3f5f7); position: relative; border-bottom: 1px solid #fff;}
 .header-no-top{ border-top-color: #fff;border-bottom: 1px solid #e2e2e2; }
@@ -39,7 +42,49 @@ a:hover{ color:#3177c1; }
 .header-infos span{ margin-right: $content-margin; }
 .header-infos .last{ margin:0; border:none; padding-right: 0; }
 
-.main .content{ padding:$content-margin;}
+.main-menu{position: relative;}
+
+// 主菜单：左侧控台名称 + 右侧 第一级主菜单
+.main-menu{border-top:1px solid #2364a9; height:64px; @include gradient-background(#1B5EA6, #12559B); overflow: hidden;}
+.main-menu-title{float:left; width:540px; height:64px; background:url(../img/main-menu-bg.png) no-repeat; font-family: Microsoft Yahei; 
+ color: #fff; font-weight: bold;font-size: 18px; padding-left: $content-margin; line-height: 63px;}
+.nav-tab{position:absolute; top:0; right:$content-margin;}
+.nav-tab .nav-tab-item{float:left; margin:34px 0 0 4px; border:1px solid #144880;
+                       border-bottom:0; color:#B7D3EE; text-align:center; line-height:29px; box-shadow:0px 0px 2px #165392;
+                       @include gradient-background(#3276BC, #1B60A8);}
+.nav-tab .nav-tab-item a{color:#B7D3EE; display:block; width:103px; height:29px;}
+.nav-tab .nav-tab-item a:hover{color:#eee;}
+.nav-tab .current{width:113px; color:#2A69AC; @include gradient-background(#F3F5F7, #FFFFFF);}
+.nav-tab .current a{color:#2A69AC;}
+.nav-tab .current a:hover{color:#333;}
+
+//左侧 二级三级菜单栏
+.sidebar-menu{ width: 239px; float: left; }
+.sidebar-menu .sidebar-top{ @include gradient-background(#D3D9E2, #E8EEF5); height: 15px; overflow: hidden;}
+.left-nav-item{_zoom:1;}
+.left-nav-item dt{ border-bottom:1px solid #DAE5ED; cursor:pointer;_zoom:1;}
+.left-nav-item dt a{ color: #666; display: block; height:16px; padding:10px 0 10px 35px; background:#e9eff6}
+.left-nav-item dt a:hover{ color: #333; background: #f1f6fa; border:none;height:16px;}
+.left-nav-item dd{display:none; height:34px;border-bottom:1px solid #cfdce6;}
+.left-nav-item dd a{display:block; height:34px; padding-left:75px; line-height:33px;_border-bottom:1px solid #DFE9F5}
+.left-nav-item a:hover, .left-nav-item a.hover{height:33px; background-color:#568BC3; border-width:1px 0; border-color:#437AB2; border-style:solid; color:#fff;}
+.left-nav-item .current dd{background-color:#DFE9F5;}
+.nav-ico{display:inline-block; width:11px; height:11px; margin-right:15px; background:url(../img/menu-open.png) no-repeat; overflow:hidden;}
+.current .nav-ico{background:url(../img/menu-close.png) no-repeat;}
+            /*** 最好使用 fixed, fix later ***/
+.arrow-btn{/* position:fixed;_ */position:absolute; top:175px; left:240px; padding: 14px 4px 14px 3px; line-height: 0;
+           background-color:#9BA2AB; text-align:center; cursor:pointer; font-family: arial;}
+.arrow-btn-left, .arrow-btn-right{display:inline-block; width:5px; height:7px; background:url(../img/icon-arrow-left.png) no-repeat; overflow:hidden;}
+.arrow-btn-right{background:url(../img/icon-arrow-right.png) no-repeat;}
+
+// 右侧主要内容页
+.main .content{ margin: 0 0 0 255px; padding: 50px $content-margin $content-margin; _float: left;_margin-left:0;  }
+.main-content-title{border-top:1px dashed $formBorderColor;}
+.main-content-title span{position:absolute; margin-top:-10px; padding-right:15px; background-color:#F3F5F7; color:#333; font-size:14px; font-weight:normal;}
+.main-content-top{ padding-top:30px;border-bottom:1px dashed $formBorderColor; padding-bottom:18px; margin-bottom: 20px;}
+.main-content-bottom{/* margin-left: 380px; */}
+
+
 
 //页脚
 .footer{ background-color: #e5e5e5; font-size: 12px; line-height: 20px; color: #999; }
