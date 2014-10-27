@@ -271,6 +271,18 @@ a:hover { color: #3177c1; }
 
 .nav-tab .current a:hover { color: #333; }
 
+.mx-layout-center .main-menu { background: #2e74bc; border-top: 1px solid #175ba2; height: auto; }
+
+.mx-layout-center .nav-tab { position: static; width: 960px; margin: 0 auto; }
+
+.mx-layout-center .nav-tab .nav-tab-item { margin: 0; border: none; background: none; box-shadow: none; border-left: 1px solid #2e74bc; border-right: 1px solid #2e74bc; }
+
+.mx-layout-center .nav-tab .nav-tab-item a { color: #fff; padding: 10px 0; }
+
+.mx-layout-center .nav-tab .nav-tab-item a:hover { color: #B7D3EE; }
+
+.mx-layout-center .nav-tab .current { width: auto; color: #fff; background-color: #236bb7; border-left: 1px solid #1e67b4; border-right: 1px solid #1e67b4; }
+
 .sidebar-menu { width: 239px; float: left; }
 
 .sidebar-menu .sidebar-top { background-image: -moz-linear-gradient(#d3d9e2, #e8eef5); background-image: -webkit-linear-gradient(#d3d9e2, #e8eef5); background-image: linear-gradient(#d3d9e2, #e8eef5); *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD3D9E2', endColorstr='#FFE8EEF5'); height: 15px; overflow: hidden; }
