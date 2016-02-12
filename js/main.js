@@ -1,5 +1,5 @@
 /*
-* Matrix v2.1.0 (c) 2014 ChinaPnR.com
+* Matrix v2.1.0 (c) 2016 ChinaPnR.com
 * MIT License: http://ued.chinapnr.com/matrix/license.txt
 */
 $(function(){
@@ -35,7 +35,7 @@ $(function(){
     }else{
       $('.main .content').css('float',"none");
     }
-    $('.has-sidebar').css('background-position','-240px 0'); 
+    $('.has-sidebar').css('background-position','-240px 0');
   },function(){
     $('.left-menu').show();
     $('.arrow-btn').css('left',240);
