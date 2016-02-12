@@ -2,64 +2,77 @@
 //============================================================
 // 表单样式
 //============================================================
-
-.form-border{border: 1px solid #acc7e2; padding:20px 0 20px 15px; }
+.form-border {
+  border: 1px solid #acc7e2;
+  padding: 20px 0 20px 15px;
+}
 
 // 组件块 label+组件
-.form-group{
+.form-group {
   position: relative;
   margin-right: 15px;
   margin-bottom: 10px;
   _margin-top: -2px;
   @include inline-block();
 }
-.form-group .form-group{
-  margin:0;
+
+.form-group .form-group {
+  margin: 0;
   width: $formInputWidth+22px;
 }
-.block .form-group{
+
+.block .form-group {
   width: auto;
 }
+
 // 表单页面
-.form-btns{
+.form-btns {
   display: block;
   padding-left: $formLabelWidth;
   margin: 5px 0 0 5px;
   _padding-bottom: 1px;
 }
-.form-list .form-group{
+
+.form-list .form-group {
   margin-right: 0px;
   display: block;
-  width:auto;
+  width: auto;
 }
-.form-list .form-group .form-group{
+
+.form-list .form-group .form-group {
   @include inline-block();
 }
-.form-list .form-btns{
+
+.form-list .form-btns {
   padding-left: $formLabelWidthLong;
   margin-top: 15px
 }
+
 // 下拉框
-select.form-unit{
+select.form-unit {
   width: $formInputWidth+22px;
   padding-top: 9px;
   padding-bottom: 9px;
   _margin: 1px 0;
 }
-.form-list select.form-unit{
+
+.form-list select.form-unit {
   width: $formInputWidthLong+22px;
 }
+
 // 单选框，复选框
-.checkbox,.radio{
+.checkbox,
+.radio {
   display: block;
   margin-bottom: 5px;
   cursor: pointer;
   padding: 10px 0 0;
   *padding-top: 8px;
 }
+
 .checkbox-inline,
-.radio-inline{
-  display:inline;
+.radio-inline {
+  display: inline;
   padding: 10px 0;
   *padding-top: 6px;
   cursor: pointer;
@@ -67,63 +80,71 @@ select.form-unit{
   margin-right: 20px;
   vertical-align: baseline;
 }
+
 //蓝框提示
-.form-tips{
-  display:none;
+.form-tips {
+  display: none;
   position: relative;
-  left:2px;
-  top:-10px;
-  _top:2px;
-  width:10px;
+  left: 2px;
+  top: -10px;
+  _top: 2px;
+  width: 10px;
 }
 
 .form-group label.active {
   display: inline;
 }
-.form-tips-content{
-  border:1px solid #7ea3c9;
+
+.form-tips-content {
+  border: 1px solid #7ea3c9;
   background-color: #f3f8ff;
-  padding:10px 15px 6px;
+  padding: 10px 15px 6px;
   _padding-bottom: 3px;
-  position:absolute;
-  width:350px;
-  top:0;
-  left:10px;
+  position: absolute;
+  width: 350px;
+  top: 0;
+  left: 10px;
   @media (max-width: 1024px) {
-    width:270px;
+    width: 270px;
   }
 }
-.form-modal .form-tips-content{
-  width:150px;
+
+.form-modal .form-tips-content {
+  width: 150px;
 }
-.modal .form-modal .form-tips-content{
-  width:120px;
+
+.modal .form-modal .form-tips-content {
+  width: 120px;
 }
-.form-tips-content p{
+
+.form-tips-content p {
   margin-bottom: 5px;
   _margin-bottom: 4px;
 }
-.form-tips-arrow{
+
+.form-tips-arrow {
   position: absolute;
-  display:inline-block;
+  display: inline-block;
   _line-height: 0;
-  width:6px;
-  height:9px;
+  width: 6px;
+  height: 9px;
   top: 15px;
   left: 5px;
   background: url(../img/tips-arrow.png) no-repeat;
   z-index: 2;
 }
 
-.form-group .error .form-tips-content{
-  border:1px solid #ce7171;
+.form-group .error .form-tips-content {
+  border: 1px solid #ce7171;
   background-color: #fff4f4;
-  color:#ca4240;
+  color: #ca4240;
 }
-.form-group .error .form-tips-arrow{
+
+.form-group .error .form-tips-arrow {
   background: url(../img/tips-error-arrow.png) no-repeat;
 }
-.form-group .okay{
+
+.form-group .okay {
   /*line-height: 30px;*/
   top: 1px;
   _top: 3px;
@@ -131,5 +152,12 @@ select.form-unit{
   background: url(../img/form-check.png) no-repeat left center;
   _background-position: 0 -5px;
 }
-.form-group .error, .form-group .okay{z-index: 10}
-.form-group .tip{z-index: 20}
+
+.form-group .error,
+.form-group .okay {
+  z-index: 10
+}
+
+.form-group .tip {
+  z-index: 20
+}

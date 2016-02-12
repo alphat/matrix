@@ -2,8 +2,8 @@
 * Matrix v2.1.0 (c) 2016 ChinaPnR.com
 * MIT License: http://ued.chinapnr.com/matrix/license.txt
 */
-@charset "UTF-8";
 
+@charset "UTF-8";
 // css 重置
 @import "matrix/reset.scss";
 // 变量
@@ -16,8 +16,6 @@
 @import "matrix/layout.scss";
 // 自适应
 @import "matrix/responsive.scss";
-
-
 // 表单样式
 @import "matrix/form.scss";
 // 按钮样式

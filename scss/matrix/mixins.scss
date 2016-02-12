@@ -3,11 +3,12 @@
 // 背景渐变，默认垂直（vertical），横向为（horizontal）
 // @include gradient-horizontal(#333, #ccc, horizontal);
 //============================================================
-@mixin gradient-background($from, $to, $orientation: vertical){
+@mixin gradient-background($from, $to, $orientation: vertical) {
   // 现代浏览器
-  @if $orientation == vertical {
+  @if $orientation==vertical {
     @include background-image(linear-gradient($from, $to));
-  } @else {
+  }
+  @else {
     @include background-image(linear-gradient(left top, $from, $to));
   }
   //IE6+
@@ -34,7 +35,8 @@
 // 修复IE6不支持inline-block功能
 @mixin inline-block() {
   display: inline-block;
-  *display: inline; /* IE7 inline-block hack */
+  *display: inline;
+  /* IE7 inline-block hack */
   *zoom: 1;
 }
 
@@ -44,6 +46,7 @@
   width: auto;
   _width: $w;
 }
+
 // 修复IE6不支持min-heigth
 @mixin min-height($h) {
   min-height: $h;
