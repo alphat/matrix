@@ -12,7 +12,7 @@
     font-size: 14px;
     font-weight: bold;
     @include inline-block();
-    @include min-width(80px); 
+    @include min-width(80px);
   }
 }
 a.btn-primary{
@@ -26,7 +26,7 @@ a.btn-primary{
   &:hover{
     border:1px solid #1364b8;
     @include gradient-background(#539fee, #2478cf);
-    span{  
+    span{
       border:1px solid #6badf0;
     }
   }
@@ -48,7 +48,7 @@ a.btn-secondary{
   &:hover{
     border:1px solid #a7c9eb;
     @include gradient-background(#fff, #dbe8f6);
-    span{  
+    span{
       border:1px solid #ddeaf5;
     }
   }

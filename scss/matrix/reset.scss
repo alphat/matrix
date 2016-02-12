@@ -8,7 +8,7 @@ $baseLineHeight: 16px;
 
 html {
   color: #666;
-  background: #fff; 
+  background: #fff;
   //保持移动端缩放网页大小保持字体不变
       -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -65,7 +65,7 @@ fieldset, img {
 }
 //解决 IE6-7 图片缩放锯齿问题
 img {
-  -ms-interpolation-mode: bicubic;    
+  -ms-interpolation-mode: bicubic;
 }
 //ie6 7 8(q) bug 显示为行内表现
 iframe {
